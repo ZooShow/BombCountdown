@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="timerBackground">
+        <span>
+            Enter the time
+        </span>
+        <form id="form">
+
+            <input type="number" id="hours" class="check" min="0" value="0" required="required" min="0" onkeypress="return false"> <span>:</span>
+
+            <input type="number" id="minutes" class="check" min="0" value="0" required="required" min="0" max="59" onkeypress="return false"> <span>:</span>
+
+            <input type="number" id="seconds" class="check" min="0" value="0" required="required" min="0" max="59" onkeypress="return false">
+
+            <br>
+            <input type="submit" id="submit" value="submit">
+        </form>
+    </div>
+    <div class="startBackground none">
+        <span>Your timer starts while it is running you can watch the dancing cat</span>
+        <br>
+        <img src="src/img/cat.gif" alt="Dancing cat">
+    </div>
+</body>
+<script src="src/script.js"></script>
+
+</html>
